@@ -6,20 +6,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand|Yellowtail" rel="stylesheet"> 
 	<link rel="stylesheet" href="style.css">
 	<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
 
 	<nav>
-	    <div class="nav-wrapper">
-	      <a href="#" class="brand-logo">Matt Bu</a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="sass.html">home</a></li>
-	        <li><a href="badges.html">portfolio</a></li>
-	        <li><a href="collapsible.html">design</a></li>
-	      </ul>
-	    </div>
-	  </nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">Matt Bu</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="sass.html">home</a></li>
+				<li><a href="badges.html">portfolio</a></li>
+				<li><a href="collapsible.html">design</a></li>
+				<li><a href="travel.html">travel</a></li>
+			</ul>
+		</div>
+	</nav>
 	 <!--
 	<nav>
 	  <div class="nav-container">
@@ -37,66 +38,166 @@
 		  <a class="brand-logo center">Matt Bu</a>
 	  </div>
 	</nav> 
-	-->
-	<div class="parallax-container" style="width:100%; height: 750px">
-      <div class="parallax"><img class="front-page" src="cover.jpg" alt="Cover"></div>
-      <span class="centered">welcome</span>
-      <span class="centered" style="margin-top:250px;"><a id="down-button" class="btn-floating btn-large waves-effect waves-light white"><i class="fas fa-angle-down" style="color:black!important"></i></a></span>
-    </div>
+-->
+<div class="parallax-container" style="width:100%; height: 100vh">
+	<div class="parallax"><img class="front-page" src="cover.jpg" alt="Cover"></div>
+	<span id="lang-1" class="centered">welcome</span>
+	<span id="lang-2" class="centered">欢迎</span>
+	<span class="centered cover-btn"><a id="down-button" class="btn-floating btn-large waves-effect waves-light white"><i class="fas fa-angle-down" style="color:black!important"></i></a></span>
+</div>
 
-    <br>
-	<div class="container first-element main-content">
-	  <h4 id="lang-1">hello, I'm a</h4>
-	  <h4 id="lang-2">你好， 我是个</h4>
+<br>
+<div id="first-element" class="container main-content">
+	<h4>hello</h4>
 
-	  <p class="grey-text text-darken-2">Coder, designer, creator.</p>
-	  <br>
-	  <div class="row">
-          <div class="col l4 s12 border-right">
-            <h5>coder</h5>
-            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYwIDYwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MCA2MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTU1LjUwMiwxLjVINC40OThDMi4wMTgsMS41LDAsMy41MTgsMCw1Ljk5OVYzOC41djQuNTAxYzAsMi40OCwyLjAxOCw0LjQ5OSw0LjQ5OCw0LjQ5OWgxNy44NTYgICAgYzAuMTQyLDEuNzUyLTAuNjE4LDMuNDgyLTIuMDIzLDQuNDcybC0xLjgwMSwxLjI3Yy0wLjExNSwwLjA4LTAuMjExLDAuMTc3LTAuMjksMC4yODVDMTYuOTg1LDUzLjY1OCwxNiw1NC43MTEsMTYsNTYgICAgYzAsMS4zNzgsMS4xMjEsMi41LDIuNSwyLjVoMjNjMS4zNzksMCwyLjUtMS4xMjIsMi41LTIuNWMwLTEuMjg5LTAuOTg0LTIuMzQxLTIuMjM5LTIuNDc0Yy0wLjA3OC0wLjEwNi0wLjE3My0wLjIwMi0wLjI4NS0wLjI4MSAgICBsLTEuODA0LTEuMjcxYy0xLjQwNi0wLjk5MS0yLjE2Ny0yLjcyMS0yLjAyNS00LjQ3NGgxNy44NTVjMi40OCwwLDQuNDk4LTIuMDE4LDQuNDk4LTQuNDk5VjM4LjVWNS45OTkgICAgQzYwLDMuNTE4LDU3Ljk4MiwxLjUsNTUuNTAyLDEuNXogTTIsNS45OTlDMiw0LjYyMSwzLjEyMSwzLjUsNC40OTgsMy41aDUxLjAwNEM1Ni44NzksMy41LDU4LDQuNjIxLDU4LDUuOTk5VjM2LjVIMlY1Ljk5OXogICAgIE00MS41LDU2LjVoLTIzYy0wLjI3MSwwLTAuNS0wLjIyOS0wLjUtMC41czAuMjI5LTAuNSwwLjUtMC41aDAuNzI2aDIxLjU0OEg0MS41YzAuMjcxLDAsMC41LDAuMjI5LDAuNSwwLjUgICAgUzQxLjc3MSw1Ni41LDQxLjUsNTYuNXogTTM1LjY0Miw0Ny41MDJjLTAuMTMzLDIuMzI5LDAuODgzLDQuNjE3LDIuNzI5LDUuOTk4aC0xNi43NGMxLjg0Ni0xLjM4MSwyLjg2Mi0zLjY3LDIuNzI5LTYgICAgTDM1LjY0Miw0Ny41MDJ6IE01OCw0My4wMDFjMCwxLjM3OC0xLjEyMSwyLjQ5OS0yLjQ5OCwyLjQ5OUgzOC4wNThIMjEuOTQzSDQuNDk4QzMuMTIxLDQ1LjUsMiw0NC4zNzksMiw0My4wMDFWMzguNWg1NlY0My4wMDF6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTUsMTEuNWMwLjI1NiwwLDAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzbDQtNGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0cy0xLjAyMy0wLjM5MS0xLjQxNCwwbC00LDQgICAgYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzQuNDg4LDExLjQwMiw0Ljc0NCwxMS41LDUsMTEuNXoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNNSwxNi41YzAuMjU2LDAsMC41MTItMC4wOTgsMC43MDctMC4yOTNsMi0yYzAuMzkxLTAuMzkxLDAuMzkxLTEuMDIzLDAtMS40MTRzLTEuMDIzLTAuMzkxLTEuNDE0LDBsLTIsMiAgICBjLTAuMzkxLDAuMzkxLTAuMzkxLDEuMDIzLDAsMS40MTRDNC40ODgsMTYuNDAyLDQuNzQ0LDE2LjUsNSwxNi41eiIgZmlsbD0iIzAwMDAwMCIvPgoJCTxwYXRoIGQ9Ik04LjI5LDEwLjc5QzguMTA5LDEwLjk4LDgsMTEuMjQsOCwxMS41czAuMTA5LDAuNTIsMC4yOSwwLjcxQzguNDc5LDEyLjM5LDguNzI5LDEyLjUsOSwxMi41YzAuMjYsMCwwLjUyLTAuMTEsMC43MS0wLjI5ICAgIEM5Ljg5LDEyLjAyLDEwLDExLjc2LDEwLDExLjVzLTAuMTEtMC41Mi0wLjI5LTAuNzFDOS4zMywxMC40Miw4LjY3LDEwLjQyLDguMjksMTAuNzl6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTEwLjI5MywxMC4yMDdDMTAuNDg4LDEwLjQwMiwxMC43NDQsMTAuNSwxMSwxMC41czAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzbDMtM2MwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0ICAgIHMtMS4wMjMtMC4zOTEtMS40MTQsMGwtMywzQzkuOTAyLDkuMTg0LDkuOTAyLDkuODE2LDEwLjI5MywxMC4yMDd6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTEzLjI5MywxMC43OTNsLTksOWMtMC4zOTEsMC4zOTEtMC4zOTEsMS4wMjMsMCwxLjQxNEM0LjQ4OCwyMS40MDIsNC43NDQsMjEuNSw1LDIxLjVzMC41MTItMC4wOTgsMC43MDctMC4yOTNsOS05ICAgIGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0UzEzLjY4NCwxMC40MDIsMTMuMjkzLDEwLjc5M3oiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMTUuMjksOC43OUMxNS4xMDksOC45OCwxNSw5LjIzLDE1LDkuNXMwLjEwOSwwLjUyLDAuMjksMC43MWMwLjE4OSwwLjE4LDAuNDM5LDAuMjksMC43MSwwLjI5ICAgIGMwLjI3LDAsMC41Mi0wLjExLDAuNzEtMC4yOUMxNi44OSwxMC4wMiwxNyw5Ljc3LDE3LDkuNXMtMC4xMS0wLjUyLTAuMjktMC43MUMxNi4zNCw4LjQyLDE1LjY2LDguNDIsMTUuMjksOC43OXoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNMTguMjkzLDUuNzkzbC0xLDFjLTAuMzkxLDAuMzkxLTAuMzkxLDEuMDIzLDAsMS40MTRDMTcuNDg4LDguNDAyLDE3Ljc0NCw4LjUsMTgsOC41czAuNTEyLTAuMDk4LDAuNzA3LTAuMjkzbDEtMSAgICBjMC4zOTEtMC4zOTEsMC4zOTEtMS4wMjMsMC0xLjQxNFMxOC42ODQsNS40MDIsMTguMjkzLDUuNzkzeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" width="50px" />
-          </div>
-          <div class="col l4 s12 border-right">
-            <h5>designer</h5>
-            
-          </div>
-          <div class="col l4 s12" style="overflow: hidden;">
-            <h5>creator</h5>
-            
-          </div>
-        </div>
+	<p class="grey-text text-darken-2">I'm <b id="age"></b> years old.</p>
+	<br>
+	<div class="intro row">
+		<div class="col l4 s12 border-right" style="visibility: hidden">
 
-
+			<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTQ3Mi42LDcuNTMzSDM3LjRDMTYuMDY3LDcuNTMzLTEsMjQuNi0xLDQ1LjkzM3YyNzcuMzMzdjM4LjRjMCwyMS4zMzMsMTcuMDY3LDM4LjQsMzguNCwzOC40aDE1Mi4xNTcgICAgIGMxLjIwOSwxNC44NTItNS40OTIsMjkuNDA3LTE3LjMzMSwzNy41NDdsLTE1LjM2LDExLjA5M2MtMS41ODMsMC45NS0yLjgxMSwyLjI1My0zLjY0NiwzLjczMyAgICAgYy0xMC40MzksMy4yMS0xNy42ODcsMTIuNzAyLTE3LjY4NywyNC40MjdjMCwxNC41MDcsMTEuMDkzLDI1LjYsMjUuNiwyNS42aDE4Ny43MzNjMTQuNTA3LDAsMjUuNi0xMS4wOTMsMjUuNi0yNS42ICAgICBjMC0xMi4zNTEtOC4wNDQtMjIuMjIzLTE5LjM4OC0yNC44ODVjLTAuNzI2LTEuMjg5LTEuNjY2LTIuNDI1LTIuNzk5LTMuMjc1bC0xNS4zNi0xMS4wOTMgICAgIGMtMTIuMDU3LTguMjg5LTE4LjExMy0yMi41NjgtMTcuMDE2LTM3LjU0N0g0NzIuNmMyMS4zMzMsMCwzOC40LTE3LjA2NywzOC40LTM4LjR2LTM4LjRWNDUuOTMzICAgICBDNTExLDI0LjYsNDkzLjkzMyw3LjUzMyw0NzIuNiw3LjUzM3ogTTE2LjA2Nyw0NS45MzNjMC0xMS45NDcsOS4zODctMjEuMzMzLDIxLjMzMy0yMS4zMzNoNDM1LjIgICAgIGMxMS45NDcsMCwyMS4zMzMsOS4zODcsMjEuMzMzLDIxLjMzM1YzMDYuMkgxNi4wNjdWNDUuOTMzeiBNMzQ4Ljg2Nyw0ODUuNEgxNjEuMTMzYy01LjEyLDAtOC41MzMtMy40MTMtOC41MzMtOC41MzMgICAgIHMzLjQxMy04LjUzMyw4LjUzMy04LjUzM2gxLjcwN2gxODQuMzJoMS43MDdjNS4xMiwwLDguNTMzLDMuNDEzLDguNTMzLDguNTMzUzM1My45ODcsNDg1LjQsMzQ4Ljg2Nyw0ODUuNHogTTMyNS44MjcsNDUxLjI2NyAgICAgSDE4My4zMmMxNi4yMTMtMTEuOTQ3LDI0Ljc0Ny0zMS41NzMsMjMuODkzLTUxLjJoOTUuNTczQzMwMS4wOCw0MTkuNjkzLDMxMC40NjcsNDM5LjMyLDMyNS44MjcsNDUxLjI2N3ogTTQ5My45MzMsMzYxLjY2NyAgICAgYzAsMTEuOTQ3LTkuMzg3LDIxLjMzMy0yMS4zMzMsMjEuMzMzSDMyNi42OGgtMTQwLjhIMzcuNGMtMTEuOTQ3LDAtMjEuMzMzLTkuMzg3LTIxLjMzMy0yMS4zMzN2LTM4LjRoNDc3Ljg2N1YzNjEuNjY3eiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cGF0aCBkPSJNMTQ3LjQ4LDE2OS42NjdsNjIuMjkzLTYyLjI5M2MzLjQxMy0zLjQxMywzLjQxMy04LjUzMywwLTExLjk0N3MtOC41MzMtMy40MTMtMTEuOTQ3LDBsLTY4LjI2Nyw2OC4yNjcgICAgIGMtMi41NiwyLjU2LTMuNDEzLDUuOTczLTEuNzA3LDkuMzg3YzAuODUzLDEuNzA3LDEuNzA3LDIuNTYsMi41NiwzLjQxM2w2Ny40MTMsNjcuNDEzYzEuNzA3LDEuNzA3LDMuNDEzLDIuNTYsNS45NzMsMi41NiAgICAgczQuMjY3LTAuODUzLDUuOTczLTIuNTZjMy40MTMtMy40MTMsMy40MTMtOC41MzMsMC0xMS45NDdMMTQ3LjQ4LDE2OS42Njd6IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxwYXRoIGQ9Ik0zNzkuNTg3LDE2Mi44NGwtNjcuNDEzLTY3LjQxM2MtMy40MTMtMy40MTMtOC41MzMtMy40MTMtMTEuOTQ3LDBzLTMuNDEzLDguNTMzLDAsMTEuOTQ3bDYyLjI5Myw2Mi4yOTNsLTYyLjI5Myw2Mi4yOTMgICAgIGMtMy40MTMsMy40MTMtMy40MTMsOC41MzMsMCwxMS45NDdjMS43MDcsMS43MDcsMy40MTMsMi41Niw1Ljk3MywyLjU2czQuMjY3LTAuODUzLDUuOTczLTIuNTZsNjguMjY3LTY4LjI2NyAgICAgYzIuNTYtMi41NiwzLjQxMy01Ljk3MywxLjcwNy05LjM4N0MzODEuMjkzLDE2NC41NDcsMzgwLjQ0LDE2My42OTMsMzc5LjU4NywxNjIuODR6IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxwYXRoIGQ9Ik0yNzQuNjI3LDkzLjcyYy00LjI2Ny0xLjcwNy05LjM4NywxLjcwNy0xMC4yNCw1Ljk3M2wtMzQuMTMzLDEzNi41MzNjLTEuNzA3LDQuMjY3LDEuNzA3LDkuMzg3LDUuOTczLDEwLjI0ICAgICBjMCwwLDAuODUzLDAsMS43MDcsMGM0LjI2NywwLDcuNjgtMi41Niw4LjUzMy01Ljk3M0wyODAuNiwxMDMuOTZDMjgyLjMwNyw5OS42OTMsMjc4Ljg5Myw5NC41NzMsMjc0LjYyNyw5My43MnoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8L2c+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" width="75px"/>
+			<h5>coder</h5>
+			<p>Learn more about my professional career as a software developer.</p>
+			<a class="btn pill-btn white grey-text">view more</a>
+		</div>
+		<div class="col l4 s12 border-right" style="visibility: hidden">
+			<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU0Ljk1MyA1NC45NTMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU0Ljk1MyA1NC45NTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxjaXJjbGUgY3g9IjQ1LjAyMSIgY3k9IjI1Ljk3NiIgcj0iMSIgZmlsbD0iIzAwMDAwMCIvPgoJPGNpcmNsZSBjeD0iOS4wMjEiIGN5PSIyNS45NzYiIHI9IjEiIGZpbGw9IiMwMDAwMDAiLz4KCTxjaXJjbGUgY3g9IjEyLjAyMSIgY3k9IjI4Ljk3NiIgcj0iMSIgZmlsbD0iIzAwMDAwMCIvPgoJPGNpcmNsZSBjeD0iMTguMDIxIiBjeT0iMjguOTc2IiByPSIxIiBmaWxsPSIjMDAwMDAwIi8+Cgk8Y2lyY2xlIGN4PSIxNS4wMjEiIGN5PSIzMS45NzYiIHI9IjEiIGZpbGw9IiMwMDAwMDAiLz4KCTxjaXJjbGUgY3g9IjIxLjAyMSIgY3k9IjMxLjk3NiIgcj0iMSIgZmlsbD0iIzAwMDAwMCIvPgoJPGNpcmNsZSBjeD0iMjQuMDIxIiBjeT0iMzQuOTc2IiByPSIxIiBmaWxsPSIjMDAwMDAwIi8+Cgk8Y2lyY2xlIGN4PSIzMC4wMjEiIGN5PSIzNC45NzYiIHI9IjEiIGZpbGw9IiMwMDAwMDAiLz4KCTxjaXJjbGUgY3g9IjMzLjAyMSIgY3k9IjMxLjk3NiIgcj0iMSIgZmlsbD0iIzAwMDAwMCIvPgoJPGNpcmNsZSBjeD0iMjcuMDIxIiBjeT0iMzcuOTc2IiByPSIxIiBmaWxsPSIjMDAwMDAwIi8+Cgk8Y2lyY2xlIGN4PSIzNi4wMjEiIGN5PSIyOC45NzYiIHI9IjEiIGZpbGw9IiMwMDAwMDAiLz4KCTxjaXJjbGUgY3g9IjQyLjAyMSIgY3k9IjI4Ljk3NiIgcj0iMSIgZmlsbD0iIzAwMDAwMCIvPgoJPGNpcmNsZSBjeD0iMzkuMDIxIiBjeT0iMzEuOTc2IiByPSIxIiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBkPSJNNDUuNTU5LDMyLjc5Nmw5LjM5NC01LjM2N2wtOS42NTYtNS40ODNsOS42NTYtNS41MTdMMjcuNDc3LDAuODI2TDAsMTYuNDI5bDkuNjU2LDUuNTE3TDAsMjcuNDI5bDkuNjU2LDUuNTE3TDAsMzguNDI5ICAgbDI3LjQ3NywxNS42OThsMjcuNDc3LTE1LjY5OGwtOS42NTYtNS40ODNsMC4wNzEtMC4wNDFDNDUuNDM5LDMyLjg3OSw0NS40OTcsMzIuODM3LDQ1LjU1OSwzMi43OTZ6IE0yNy40NzcsMy4xMjVsMjMuNDM2LDEzLjMwOSAgIGwtNy42MzcsNC4zNjRsMCwwbC0xNS43OTgsOS4wMjZMNC4wNDEsMTYuNDM0TDI3LjQ3NywzLjEyNXogTTExLjEyOSwyMy40MDljMC4xNjIsMC4zMzMsMC40OTcsMC41NjcsMC44OTIsMC41NjcgICBjMC4yNywwLDAuNTEyLTAuMTA5LDAuNjkyLTAuMjgzbDIuMjYyLDEuMjkyYy0wLjUzLDAuMDI1LTAuOTU0LDAuNDU1LTAuOTU0LDAuOTkxYzAsMC41NTIsMC40NDgsMSwxLDFzMS0wLjQ0OCwxLTEgICBjMC0wLjE3My0wLjA1NS0wLjMyNy0wLjEzMi0wLjQ2OWwxMC4zMyw1LjkwMmMtMC4xMTYsMC4xNjMtMC4xOTgsMC4zNTItMC4xOTgsMC41NjdjMCwwLjU1MiwwLjQ0OCwxLDEsMXMxLTAuNDQ4LDEtMSAgIGMwLTAuMDUxLTAuMDIxLTAuMDk0LTAuMDI5LTAuMTQzbDEwLjA1Mi01Ljc0M2MwLjA1OSwwLjQ5NiwwLjQ2NSwwLjg4NSwwLjk3NywwLjg4NWMwLjU1MiwwLDEtMC40NDgsMS0xICAgYzAtMC4zMjUtMC4xNjUtMC42MDEtMC40MDYtMC43ODNsMi4yMDItMS4yNThjMC4wNjgsMC4wMTUsMC4xMzIsMC4wNDEsMC4yMDQsMC4wNDFjMC40NDQsMCwwLjgwNy0wLjI5NCwwLjkzOC0wLjY5NGwwLjMyLTAuMTgzICAgbDcuNjM0LDQuMzM1bC0xLjk4MywxLjEzM2MtMC4xNTctMC4zNDctMC41MDMtMC41OTEtMC45MDgtMC41OTFjLTAuNTUyLDAtMSwwLjQ0OC0xLDFjMCwwLjIxNiwwLjA4MywwLjQwNSwwLjE5OSwwLjU2OCAgIGwtMy45NDUsMi4yNTRsMCwwbC02LjM4OCwzLjY1YzAuMDc4LTAuMTQyLDAuMTM0LTAuMjk4LDAuMTM0LTAuNDcyYzAtMC41NTItMC40NDgtMS0xLTFzLTEsMC40NDgtMSwxICAgYzAsMC41MzcsMC40MjYsMC45NjcsMC45NTcsMC45OTFsLTIuMjYzLDEuMjkzYy0wLjE4LTAuMTc0LTAuNDIzLTAuMjg0LTAuNjk0LTAuMjg0Yy0wLjU1MiwwLTEsMC40NDgtMSwxICAgYzAsMC4wOCwwLjAyOCwwLjE1MSwwLjA0NiwwLjIyNmwtNC41OSwyLjYyMmwtNS41MTctMy4xNTJjLTAuMTMtMC40MDEtMC40OTQtMC42OTYtMC45MzktMC42OTZjLTAuMDczLDAtMC4xMzgsMC4wMjctMC4yMDYsMC4wNDIgICBsLTIuMjAxLTEuMjU3YzAuMjQxLTAuMTgzLDAuNDA3LTAuNDU4LDAuNDA3LTAuNzg0YzAtMC41NTItMC40NDgtMS0xLTFjLTAuNTEyLDAtMC45MTksMC4zOTEtMC45NzcsMC44ODdMNi45OTEsMjkuMTIgICBjMC4wMDctMC4wNDksMC4wMjktMC4wOTMsMC4wMjktMC4xNDRjMC0wLjU1Mi0wLjQ0OC0xLTEtMWMtMC4yMzksMC0wLjQ0OSwwLjA5NS0wLjYyMSwwLjIzNWwtMS4zNTktMC43NzZMMTEuMTI5LDIzLjQwOXogICAgTTUwLjkxMiwzOC40MzRsLTIzLjQzNiwxMy4zOUw0LjA0MSwzOC40MzRsNy42MzMtNC4zMzVsMTUuODAzLDkuMDI4bDE1LjgwMi05LjAyOEw1MC45MTIsMzguNDM0eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" width="75px"/>
+			<h5>designer</h5>
+			<p>Gain insight into my principles of color, layout, and user experience.</p>
+			<a class="btn pill-btn white grey-text">view more</a>
+		</div>
+		<div class="col l4 s12" style="visibility: hidden">
+			<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU0IDU0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NCA1NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggZD0iTTI3LDhjLTkuMzc0LDAtMTcsNy42MjYtMTcsMTdjMCw3LjExMiw0LjM5MSwxMy40MTIsMTEsMTUuOVY1MGMwLDAuNTUzLDAuNDQ3LDEsMSwxaDF2MmMwLDAuNTUzLDAuNDQ3LDEsMSwxaDYgICBjMC41NTMsMCwxLTAuNDQ3LDEtMXYtMmgxYzAuNTUzLDAsMS0wLjQ0NywxLTF2LTkuMWM2LjYwOS0yLjQ4OCwxMS04Ljc4OCwxMS0xNS45QzQ0LDE1LjYyNiwzNi4zNzQsOCwyNyw4eiBNMzAsNDkgICBjLTAuNTUzLDAtMSwwLjQ0Ny0xLDF2MmgtNHYtMmMwLTAuNTUzLTAuNDQ3LTEtMS0xaC0xdi01aDh2NUgzMHogTTMxLjY4OCwzOS4yNDJDMzEuMjc3LDM5LjM3NywzMSwzOS43NjEsMzEsNDAuMTkyVjQyaC04di0xLjgwOCAgIGMwLTAuNDMyLTAuMjc3LTAuODE1LTAuNjg4LTAuOTVDMTYuMTQ1LDM3LjIxNCwxMiwzMS40OSwxMiwyNWMwLTguMjcxLDYuNzI5LTE1LDE1LTE1czE1LDYuNzI5LDE1LDE1ICAgQzQyLDMxLjQ5LDM3Ljg1NSwzNy4yMTQsMzEuNjg4LDM5LjI0MnoiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik0yNyw2YzAuNTUzLDAsMS0wLjQ0NywxLTFWMWMwLTAuNTUzLTAuNDQ3LTEtMS0xcy0xLDAuNDQ3LTEsMXY0QzI2LDUuNTUzLDI2LjQ0Nyw2LDI3LDZ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBkPSJNNTEsMjRoLTRjLTAuNTUzLDAtMSwwLjQ0Ny0xLDFzMC40NDcsMSwxLDFoNGMwLjU1MywwLDEtMC40NDcsMS0xUzUxLjU1MywyNCw1MSwyNHoiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik03LDI0SDNjLTAuNTUzLDAtMSwwLjQ0Ny0xLDFzMC40NDcsMSwxLDFoNGMwLjU1MywwLDEtMC40NDcsMS0xUzcuNTUzLDI0LDcsMjR6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBkPSJNNDMuMjY0LDcuMzIybC0yLjgyOCwyLjgyOGMtMC4zOTEsMC4zOTEtMC4zOTEsMS4wMjMsMCwxLjQxNGMwLjE5NSwwLjE5NSwwLjQ1MSwwLjI5MywwLjcwNywwLjI5MyAgIHMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5M2wyLjgyOC0yLjgyOGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0UzQzLjY1NCw2LjkzMiw0My4yNjQsNy4zMjJ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBkPSJNMTIuMTUsMzguNDM2bC0yLjgyOCwyLjgyOGMtMC4zOTEsMC4zOTEtMC4zOTEsMS4wMjMsMCwxLjQxNGMwLjE5NSwwLjE5NSwwLjQ1MSwwLjI5MywwLjcwNywwLjI5MyAgIHMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5M2wyLjgyOC0yLjgyOGMwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0UzEyLjU0MSwzOC4wNDUsMTIuMTUsMzguNDM2eiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTQxLjg1LDM4LjQzNmMtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMHMtMC4zOTEsMS4wMjMsMCwxLjQxNGwyLjgyOCwyLjgyOGMwLjE5NSwwLjE5NSwwLjQ1MSwwLjI5MywwLjcwNywwLjI5MyAgIHMwLjUxMi0wLjA5OCwwLjcwNy0wLjI5M2MwLjM5MS0wLjM5MSwwLjM5MS0xLjAyMywwLTEuNDE0TDQxLjg1LDM4LjQzNnoiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik0xMi4xNSwxMS41NjRjMC4xOTUsMC4xOTUsMC40NTEsMC4yOTMsMC43MDcsMC4yOTNzMC41MTItMC4wOTgsMC43MDctMC4yOTNjMC4zOTEtMC4zOTEsMC4zOTEtMS4wMjMsMC0xLjQxNGwtMi44MjgtMi44MjggICBjLTAuMzkxLTAuMzkxLTEuMDIzLTAuMzkxLTEuNDE0LDBzLTAuMzkxLDEuMDIzLDAsMS40MTRMMTIuMTUsMTEuNTY0eiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTI3LDEzYy02LjYxNywwLTEyLDUuMzgzLTEyLDEyYzAsMC41NTMsMC40NDcsMSwxLDFzMS0wLjQ0NywxLTFjMC01LjUxNCw0LjQ4Ni0xMCwxMC0xMGMwLjU1MywwLDEtMC40NDcsMS0xICAgUzI3LjU1MywxMywyNywxM3oiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" width="75px"/>
+			<h5>creator</h5>
+			<p>Find out about my personal projects and work outside of industry.</p>
+			<a class="btn pill-btn white grey-text">view more</a>
+		</div>
 	</div>
+
+	<br>
+	<h4>timeline</h4>
+	<p class="grey-text text-darken-2">a professional history.</p>
+	<div class="timeline center-align">
+		<div class="circle"> 
+			<img class="circle-img-left" src="bloomberg.png" alt="bloomberg" height="50" style="display: none"> 
+			<span class="circle-img-right"><h5>2017-present</h5><p>full-time software engineer</p></span> 
+		</div>
+
+		<div class="circle"> 
+			<img class="circle-img-left" src="amazon.png" alt="amazon" height="50" style="display: none"> 
+			<span class="circle-img-right"><h5>summer 2016</h5><p>software dev engineer intern</p></span> 
+		</div>
+		<div class="circle">
+		</div>
+	</div>
+
+	<br>
+	<h4>skills</h4>
+	<p class="grey-text text-darken-2">languages, tools, etc.</p>
+
+	<div class="skills">
+		<div class="row">
+			<div class="col l6 s12">
+				<!--<h5 style="float: left">python</h5> 
+				<span style="float: right"><i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="far fa-circle"></i></span>-->
+				<table>
+
+					<tbody>
+					  <tr>
+					  	<td>python</td>
+					    <td class="content">
+						  <div class="progress grey lighten-4">
+						      <div class="determinate black" value=90></div>
+						  </div>
+						</td>
+					    
+					  </tr>
+					  <tr>
+					  	<td>html/css</td>
+					    <td class="content">
+					    	<div class="progress grey lighten-4">
+						      <div class="determinate black" value=85></div>
+						  </div>
+					    </td>
+					  </tr>
+					  <tr>
+					  	<td>c++</td>
+					    <td class="content">
+					    	<div class="progress grey lighten-4">
+						      <div class="determinate black" value=75></div>
+						  </div>
+					    </td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col l6 s12">
+				<table>
+
+					<tbody>
+					  <tr>
+					  	<td>java</td>
+					    <td class="content">
+					    	<div class="progress grey lighten-4">
+						      <div class="determinate black" value=90></div>
+						  </div>
+					    </td>
+					  </tr>
+					  <tr>
+					  	<td>js/jquery</td>
+					    <td class="content">
+					    	<div class="progress grey lighten-4">
+						      <div class="determinate black" value=75></div>
+						  </div>
+					    </td>
+					  </tr>
+					  <tr>
+					  	<td>c</td>
+					    <td class="content">
+					    	<div class="progress grey lighten-4">
+						      <div class="determinate black" value=65></div>
+						  </div>
+					    </td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 </body>
 
 <footer class="page-footer white">
 	<div class="container">
-	<div class="row">
-	  <div class="col l6 s12">
-	    <h5 class="black-text">Contact</h5>
-	    <p class="grey-text text-darken-4">Follow me on social media or email me directly at <a href="mailto: matthewbu13@gmail.com"> matthewbu13@gmail.com</a> to chat!</p>
-	  </div>
-	  <div class="col l4 offset-l2 s12">
-	  	<br>
-	      <a class="sm-icon" href="#news"><i class="fab fa-facebook-f"></i></a>
-	      <a class="sm-icon" href="#home"><i class="fab fa-instagram"></i></a>
-		  <a class="sm-icon" href="#news"><i class="fab fa-snapchat-ghost"></i></a>
-	  </div>
-	</div>
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="black-text">Contact</h5>
+				<p class="grey-text text-darken-4">Follow me on social media or email me directly at <a href="mailto: matthewbu13@gmail.com"> matthewbu13@gmail.com</a> to chat!</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+				<br>
+				<a class="sm-icon" href="#news"><i class="fab fa-facebook-f"></i></a>
+				<a class="sm-icon" href="#home"><i class="fab fa-instagram"></i></a>
+				<a class="sm-icon" href="#news"><i class="fab fa-snapchat-ghost"></i></a>
+			</div>
+		</div>
 	</div>
 
 	<div class="footer-copyright">
-	<div class="container black-text">
-	© 2014 Copyright Matt Bu
-	</div>
+		<div class="container black-text">
+			© <b id="copyright-year"></b> Copyright Matt Bu
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 	<!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="base.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script src="base.js"></script>
 </footer>
 
 </html>
